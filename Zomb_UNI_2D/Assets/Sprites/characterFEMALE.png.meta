@@ -1,0 +1,2013 @@
+fileFormatVersion: 2
+guid: 1c1574d502036d94384d481309c7b718
+timeCreated: 1438951568
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: characterFEMALE_0
+    21300002: characterFEMALE_1
+    21300004: characterFEMALE_2
+    21300006: characterFEMALE_3
+    21300008: characterFEMALE_4
+    21300010: characterFEMALE_5
+    21300012: characterFEMALE_6
+    21300014: characterFEMALE_7
+    21300016: characterFEMALE_8
+    21300018: characterFEMALE_9
+    21300020: characterFEMALE_10
+    21300022: characterFEMALE_11
+    21300024: characterFEMALE_12
+    21300026: characterFEMALE_13
+    21300028: characterFEMALE_14
+    21300030: characterFEMALE_15
+    21300032: characterFEMALE_16
+    21300034: characterFEMALE_17
+    21300036: characterFEMALE_18
+    21300038: characterFEMALE_19
+    21300040: characterFEMALE_20
+    21300042: characterFEMALE_21
+    21300044: characterFEMALE_22
+    21300046: characterFEMALE_23
+    21300048: characterFEMALE_24
+    21300050: characterFEMALE_25
+    21300052: characterFEMALE_26
+    21300054: characterFEMALE_27
+    21300056: characterFEMALE_28
+    21300058: characterFEMALE_29
+    21300060: characterFEMALE_30
+    21300062: characterFEMALE_31
+    21300064: characterFEMALE_32
+    21300066: characterFEMALE_33
+    21300068: characterFEMALE_34
+    21300070: characterFEMALE_35
+    21300072: characterFEMALE_36
+    21300074: characterFEMALE_37
+    21300076: characterFEMALE_38
+    21300078: characterFEMALE_39
+    21300080: characterFEMALE_40
+    21300082: characterFEMALE_41
+    21300084: characterFEMALE_42
+    21300086: characterFEMALE_43
+    21300088: characterFEMALE_44
+    21300090: characterFEMALE_45
+    21300092: characterFEMALE_46
+    21300094: characterFEMALE_47
+    21300096: characterFEMALE_48
+    21300098: characterFEMALE_49
+    21300100: characterFEMALE_50
+    21300102: characterFEMALE_51
+    21300104: characterFEMALE_52
+    21300106: characterFEMALE_53
+    21300108: characterFEMALE_54
+    21300110: characterFEMALE_55
+    21300112: characterFEMALE_56
+    21300114: characterFEMALE_57
+    21300116: characterFEMALE_58
+    21300118: characterFEMALE_59
+    21300120: characterFEMALE_60
+    21300122: characterFEMALE_61
+    21300124: characterFEMALE_62
+    21300126: characterFEMALE_63
+    21300128: characterFEMALE_64
+    21300130: characterFEMALE_65
+    21300132: characterFEMALE_66
+    21300134: characterFEMALE_67
+    21300136: characterFEMALE_68
+    21300138: characterFEMALE_69
+    21300140: characterFEMALE_70
+    21300142: characterFEMALE_71
+    21300144: characterFEMALE_72
+    21300146: characterFEMALE_73
+    21300148: characterFEMALE_74
+    21300150: characterFEMALE_75
+    21300152: characterFEMALE_76
+    21300154: characterFEMALE_77
+    21300156: characterFEMALE_78
+    21300158: characterFEMALE_79
+    21300160: characterFEMALE_80
+    21300162: characterFEMALE_81
+    21300164: characterFEMALE_82
+    21300166: characterFEMALE_83
+    21300168: characterFEMALE_84
+    21300170: characterFEMALE_85
+    21300172: characterFEMALE_86
+    21300174: characterFEMALE_87
+    21300176: characterFEMALE_88
+    21300178: characterFEMALE_89
+    21300180: characterFEMALE_90
+    21300182: characterFEMALE_91
+    21300184: characterFEMALE_92
+    21300186: characterFEMALE_93
+    21300188: characterFEMALE_94
+    21300190: characterFEMALE_95
+    21300192: characterFEMALE_96
+    21300194: characterFEMALE_97
+    21300196: characterFEMALE_98
+    21300198: characterFEMALE_99
+    21300200: characterFEMALE_100
+    21300202: characterFEMALE_101
+    21300204: characterFEMALE_102
+    21300206: characterFEMALE_103
+    21300208: characterFEMALE_104
+    21300210: characterFEMALE_105
+    21300212: characterFEMALE_106
+    21300214: characterFEMALE_107
+    21300216: characterFEMALE_108
+    21300218: characterFEMALE_109
+    21300220: characterFEMALE_110
+    21300222: characterFEMALE_111
+    21300224: characterFEMALE_112
+    21300226: characterFEMALE_113
+    21300228: characterFEMALE_114
+    21300230: characterFEMALE_115
+    21300232: characterFEMALE_116
+    21300234: characterFEMALE_117
+    21300236: characterFEMALE_118
+    21300238: characterFEMALE_119
+    21300240: characterFEMALE_120
+    21300242: characterFEMALE_121
+    21300244: characterFEMALE_122
+    21300246: characterFEMALE_123
+    21300248: characterFEMALE_124
+    21300250: characterFEMALE_125
+    21300252: characterFEMALE_126
+    21300254: characterFEMALE_127
+    21300256: characterFEMALE_128
+    21300258: characterFEMALE_129
+    21300260: characterFEMALE_130
+    21300262: characterFEMALE_131
+    21300264: characterFEMALE_132
+    21300266: characterFEMALE_133
+    21300268: characterFEMALE_134
+    21300270: characterFEMALE_135
+    21300272: characterFEMALE_136
+    21300274: characterFEMALE_137
+    21300276: characterFEMALE_138
+    21300278: characterFEMALE_139
+    21300280: characterFEMALE_140
+    21300282: characterFEMALE_141
+    21300284: characterFEMALE_142
+    21300286: characterFEMALE_143
+    21300288: characterFEMALE_144
+    21300290: characterFEMALE_145
+    21300292: characterFEMALE_146
+    21300294: characterFEMALE_147
+    21300296: characterFEMALE_148
+    21300298: characterFEMALE_149
+    21300300: characterFEMALE_150
+    21300302: characterFEMALE_151
+    21300304: characterFEMALE_152
+    21300306: characterFEMALE_153
+    21300308: characterFEMALE_154
+    21300310: characterFEMALE_155
+    21300312: characterFEMALE_156
+    21300314: characterFEMALE_157
+    21300316: characterFEMALE_158
+    21300318: characterFEMALE_159
+    21300320: characterFEMALE_160
+    21300322: characterFEMALE_161
+    21300324: characterFEMALE_162
+    21300326: characterFEMALE_163
+    21300328: characterFEMALE_164
+    21300330: characterFEMALE_165
+    21300332: characterFEMALE_166
+    21300334: characterFEMALE_167
+    21300336: characterFEMALE_168
+    21300338: characterFEMALE_169
+    21300340: characterFEMALE_170
+    21300342: characterFEMALE_171
+    21300344: characterFEMALE_172
+    21300346: characterFEMALE_173
+    21300348: characterFEMALE_174
+    21300350: characterFEMALE_175
+    21300352: characterFEMALE_176
+    21300354: characterFEMALE_177
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: characterFEMALE_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1281
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1281
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1281
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1281
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_4
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1281
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1281
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_6
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1281
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_7
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1217
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_8
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1217
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_9
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1217
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1217
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_11
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1217
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_12
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1217
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_13
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1217
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_14
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1153
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_15
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1153
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_16
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1153
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_17
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1153
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_18
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1153
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_19
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1153
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1153
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_21
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1089
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_22
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1089
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_23
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1089
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_24
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1089
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_25
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1089
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_26
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1089
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_27
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1089
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_28
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1024
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_29
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1024
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_30
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1024
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_31
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1024
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_32
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1024
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_33
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1024
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_34
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1024
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_35
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1024
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_36
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 961
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_37
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 961
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_38
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 961
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_39
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 961
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_40
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 961
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_41
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 961
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_42
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 961
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_43
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 961
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_44
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 897
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_45
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 897
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_46
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 897
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_47
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 897
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_48
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 896
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_49
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 896
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_50
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 896
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_51
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 897
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_52
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 833
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_53
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 833
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_54
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 833
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_55
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 833
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_56
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 833
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_57
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 833
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_58
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 833
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_59
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 833
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_60
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 770
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_61
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 770
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_62
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 769
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_63
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 768
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_64
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 769
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_65
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 770
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_66
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 769
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_67
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 768
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_68
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 769
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_69
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 705
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_70
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 705
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_71
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 705
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_72
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 706
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_73
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 705
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_74
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 704
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_75
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 704
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_76
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 705
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_77
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 705
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_78
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 641
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_79
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 641
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_80
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 641
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_81
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 640
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_82
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 641
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_83
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 641
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_84
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 641
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_85
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 640
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_86
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 641
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_87
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 577
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_88
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 577
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_89
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 577
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_90
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 578
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_91
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 577
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_92
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 576
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_93
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 576
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_94
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 577
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_95
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 577
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_96
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 513
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_97
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 513
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_98
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 513
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_99
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 514
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_100
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 514
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_101
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 514
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_102
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 449
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_103
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 448
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_104
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 448
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_105
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 449
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_106
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 449
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_107
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 449
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_108
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 385
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_109
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 384
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_110
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 384
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_111
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 385
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_112
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 385
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_113
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 385
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_114
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 321
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_115
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 320
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_116
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 320
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_117
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 321
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_118
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 321
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_119
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 321
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_120
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 257
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_121
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 257
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_122
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 256
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_123
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 256
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_124
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 256
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_125
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 256
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_126
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 256
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_127
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 256
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_128
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 256
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_129
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 256
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_130
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 256
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_131
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 256
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_132
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 256
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_133
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 193
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_134
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 193
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_135
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 193
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_136
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 193
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_137
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 193
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_138
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 193
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_139
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 193
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_140
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 193
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_141
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 193
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_142
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 193
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_143
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 193
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_144
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 193
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_145
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 193
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_146
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 129
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_147
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 129
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_148
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 129
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_149
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 129
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_150
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 129
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_151
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 129
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_152
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 129
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_153
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 129
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_154
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 129
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_155
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 129
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_156
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 129
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_157
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 129
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_158
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 129
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_159
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 65
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_160
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 65
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_161
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 65
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_162
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 65
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_163
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 65
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_164
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 65
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_165
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 65
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_166
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 65
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_167
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 65
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_168
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 65
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_169
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 65
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_170
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 65
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_171
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 65
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_172
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_173
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_174
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_175
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_176
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 3
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characterFEMALE_177
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 0
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
