@@ -10,7 +10,7 @@ public class MalePlayer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		transform.position = new Vector2 (3f, 3.3f);
+		transform.position = new Vector2 (1f, 1f);
 		rigid = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 		
@@ -24,17 +24,19 @@ public class MalePlayer : MonoBehaviour {
 		
 		if (Input.GetAxisRaw ("Horizontal") != 0 || Input.GetAxisRaw ("Vertical") != 0) {
 
-			anim.SetBool("IDLE", false);
+			//anim.SetBool("IDLE", false);
+			anim.enabled = true;
+
 
 		} else {
 
-			//anim.enabled = false;
-			anim.SetBool("IDLE", true);
-			anim.SetBool ("WalkFront", false);
-			anim.SetBool ("WalkBack", false);
-			anim.SetBool ("WalkLeft", false);
-			anim.SetBool ("WalkRight", false);
-
+			anim.enabled = false;
+//			anim.SetBool("IDLE", true);
+//			anim.SetBool ("WalkFront", false);
+//			anim.SetBool ("WalkBack", false);
+//			anim.SetBool ("WalkLeft", false);
+//			anim.SetBool ("WalkRight", false);
+//
 		}
 		
 		if (Input.GetAxisRaw ("Horizontal") > 0) {
