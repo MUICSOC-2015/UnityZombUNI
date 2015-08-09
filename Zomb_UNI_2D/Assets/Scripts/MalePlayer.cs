@@ -6,11 +6,12 @@ public class MalePlayer : MonoBehaviour {
 	Rigidbody2D rigid;
 	public float spd;
 	Animator anim;
+	BoardManager charSize = new BoardManager();
 	
 	// Use this for initialization
 	void Start () {
 		
-		transform.position = new Vector2 (1f, 1f);
+		transform.position = new Vector2 (2f * charSize.size, 2f * charSize.size);
 		rigid = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 		

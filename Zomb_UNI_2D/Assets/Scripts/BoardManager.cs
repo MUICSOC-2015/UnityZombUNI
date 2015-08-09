@@ -154,12 +154,12 @@ public class BoardManager : MonoBehaviour {
 					GameObject instance = Instantiate(toInstantiate, new Vector3 (x *size, y*size , 0f), Quaternion.identity) as GameObject;
 					instance.transform.SetParent(boardHolder);
 				}
-				if ( x == 2 && y == 2)
-				{
-					toInstantiate = playerTiles;
-					GameObject instance = Instantiate(toInstantiate, new Vector3 (x *size, y*size , 0f), Quaternion.identity) as GameObject;
-					instance.transform.SetParent(boardHolder);
-				}
+//				if ( x == 2 && y == 2)
+//				{
+//					toInstantiate = playerTiles;
+//					GameObject instance = Instantiate(toInstantiate, new Vector3 (x *size, y*size , 0f), Quaternion.identity) as GameObject;
+//					instance.transform.SetParent(boardHolder);
+//				}
 			}
 		}
 	}

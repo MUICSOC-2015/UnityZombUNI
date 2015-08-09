@@ -3,20 +3,22 @@ using System.Collections;
 
 public class CamControll : MonoBehaviour {
 
-	public Transform target;
-	
 	// Use this for initialization
-	void Start () {
-
-		transform.position = new Vector3 (target.position.x, target.position.y, 0);
-
-
+	public Transform target;
+	private float trackSpeed = 10;
+	
+	
+	// Set target
+	public void SetTarget(Transform t) {
+		target = t;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-
-		transform.position = Vector3.Lerp(transform.position ,new Vector3 (target.position.x, target.position.y, 0), Time.deltaTime * 10);
-	
+	// Track target
+	void LateUpdate() {
+		if (target) {
+			var v = transform.position;
+			v.x = target.position.x;
+			transform.position = Vector3.MoveTowards (transform.position, v, trackSpeed * Time.deltaTime);
+		}
 	}
 }
