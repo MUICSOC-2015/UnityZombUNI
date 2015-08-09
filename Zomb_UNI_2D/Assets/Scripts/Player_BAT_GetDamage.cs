@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class Enem_BAT_GetDamage : MonoBehaviour {
+public class Player_BAT_GetDamage : MonoBehaviour {
 
 	public Scrollbar HP;
 	Rigidbody2D rigid;
@@ -10,9 +10,13 @@ public class Enem_BAT_GetDamage : MonoBehaviour {
 	float time2;
 	Vector2 startPOS;
 	bool startTime;
+	bool startImmune;
 	float damage;
+	float timeImmune;
 	Animator anim;
 	bool End = true;
+	public Button ATK;
+	bool canDamage;
 
 	// Use this for initialization
 	void Start () {
@@ -20,31 +24,34 @@ public class Enem_BAT_GetDamage : MonoBehaviour {
 		rigid = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 		startPOS = transform.position;
-		startTime = false;
+		startTime = true;
 		time = 1f;
-		time2 = 0.5f;
+		time2 = 1.4f;
+		canDamage = true;
+		timeImmune = 6f;
 
 	
 	}
-	
-	// Update is called once per frame
+
 	void FixedUpdate () {
 
 
 		if (time < 0) {
 
-			rigid.velocity = new Vector3 (-1f, 0, 0) * Time.deltaTime * 85;
+			rigid.velocity = new Vector3 (1f, 0, 0) * Time.deltaTime * 10f;
 
-
-
-			if (transform.position.x < -1.75f && End ) {
+			if (transform.position.x > 1.75f && End ) {
 
 				rigid.velocity = new Vector3(0,0,0);
 			}
 			
 		}
 
+		if (startImmune) {
 
+			timeImmune -= Time.deltaTime;
+
+		}
 
 			if (time < -2.5f && End) {
 
@@ -62,11 +69,13 @@ public class Enem_BAT_GetDamage : MonoBehaviour {
 			time2 -= Time.deltaTime;
 			anim.SetBool("Dead", true);
 
+
 			if (time2 < 0) {
 
-				anim.SetBool("Dead", false);
+				//anim.SetBool("Dead", false);
 				End = false;
 				rigid.velocity = new Vector3(transform.position.x, transform.position.y, 0) * 0;
+				anim.enabled = false;
 
 			}
 
@@ -77,9 +86,11 @@ public class Enem_BAT_GetDamage : MonoBehaviour {
 	void Reset() {
 
 		time = 1f;
-		rigid.velocity = new Vector3 (-startPOS.x, 0, 0) * Time.deltaTime * 50; 
+		transform.position = startPOS; 
+		print ("Reset");
 		startTime = false;
 		time2 = 1f;
+		GetComponent<Player_ATK>().enabled = true;
 
 
 	}
@@ -89,10 +100,30 @@ public class Enem_BAT_GetDamage : MonoBehaviour {
 		this.damage = dam;
 	}
 
+	public void Attack (bool ATK ) {
+		
+		
+		if (ATK) {
+
+			startImmune = true;
+			
+		}
+		
+	}
+
+
 	void OnCollisionEnter2D (Collision2D col) {
 
-		startTime = true;
-		HP.size -= damage/100f;
+		if (timeImmune >= 4) {
+
+			startTime = true;
+			HP.size -= 50 / 100f;
+			GetComponent<Player_ATK> ().enabled = false;
+			print ("canDam");
+			timeImmune = 8f;
+
+		}
+
 
 
 	}

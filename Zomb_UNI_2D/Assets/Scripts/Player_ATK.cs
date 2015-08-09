@@ -15,6 +15,8 @@ public class Player_ATK : MonoBehaviour {
 	bool slap;
 	bool back;
 	bool prevState;
+	GameObject connect;
+	Component getDam;
 
 	// Use this for initialization
 	void Start () {
@@ -27,7 +29,8 @@ public class Player_ATK : MonoBehaviour {
 		time = 1.2f;
 		slap = false;
 		back = false;
-		anim.SetBool ("IDLE", false);	
+		anim.SetBool ("IDLE", false);
+
 	
 	}
 
@@ -84,8 +87,7 @@ public class Player_ATK : MonoBehaviour {
 
 	}
 
-
-		
+	
 
 	public void comeBack() {
 
@@ -96,6 +98,7 @@ public class Player_ATK : MonoBehaviour {
 			anim.SetBool ("IDLE", true);
 			slap = false;
 			time2-=Time.deltaTime;
+
 		}
 
 
@@ -109,32 +112,34 @@ public class Player_ATK : MonoBehaviour {
 		if (ATK) {
 
 			anim.SetBool ("WalkL", true);
-
-			if (anim.GetBool("WalkL")){
 			rigid.velocity = new Vector3 (target.position.x, target.position.y, 0) * Time.deltaTime * 50f;
-			}
 			anim.SetBool ("IDLE", false);
-			slap = false;
 			time2 = 0.1f;
 			time = 1.2f;
+			GetComponent<Player_BAT_GetDamage>().enabled = false;
 
 
 		}
 
 	}
 	
-
-
 	
 
 	public void OnCollisionEnter2D (Collision2D col) {
 
-		anim.SetBool ("WalkL", false);
-		anim.SetBool ("Slap", true);
-		time = 1.2f;
-		Vector3 v = rigid.velocity;
-		v.y = 0.0f;
-		rigid.velocity = v;
+		if (anim.GetBool("WalkL")) {
+
+			anim.SetBool ("WalkL", false);
+			anim.SetBool ("Slap", true);
+			time = 1.2f;
+			Vector3 v = rigid.velocity;
+			v.y = 0.0f;
+			rigid.velocity = v;
+			print ("CollidePP");
+
+
+
+		}
 
 	}
 
