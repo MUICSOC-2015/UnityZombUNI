@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour {
 
 	public static GameManager instance = null;
 	private BoardManager boardScript;
+	private CamControll cam = new CamControll();
 	private int level = 1;
 
 	// Use this for initialization
@@ -28,6 +29,6 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 }

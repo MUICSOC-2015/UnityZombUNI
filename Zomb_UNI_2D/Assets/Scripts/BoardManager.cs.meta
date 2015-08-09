@@ -1,10 +1,19 @@
 fileFormatVersion: 2
 guid: 77798930678ef416b8c5b4e575418c70
-timeCreated: 1439022094
+timeCreated: 1439035630
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - exit: {fileID: 118284, guid: 2f38f2ce5e53d68409b724efa82158fd, type: 2}
+  - floorTiles: {fileID: 163396, guid: a8e2f8e1c21c8e241b1ce248ad4dbe81, type: 2}
+  - tableTiles: {fileID: 110768, guid: 04f482d20ac968f42b03f7be88db995d, type: 2}
+  - chairTiles: {fileID: 157366, guid: 287eb426aa9973c4394e0108d6c670a1, type: 2}
+  - playerTiles: {fileID: 116284, guid: 183e79b4253a94920921d4d86853f422, type: 2}
+  - leftWallTiles: {fileID: 118284, guid: 7e7abd0a8a622604eb4cebf59347ba43, type: 2}
+  - rightWallTiles: {fileID: 118284, guid: 7e7abd0a8a622604eb4cebf59347ba43, type: 2}
+  - macTiles: {fileID: 118284, guid: 7e7abd0a8a622604eb4cebf59347ba43, type: 2}
+  - boardTiles: {fileID: 118284, guid: 7e7abd0a8a622604eb4cebf59347ba43, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
