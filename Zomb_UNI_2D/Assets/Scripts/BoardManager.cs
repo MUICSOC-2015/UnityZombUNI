@@ -18,7 +18,7 @@ public class BoardManager : MonoBehaviour {
 
 	public int columns = 10;
 	public int rows = 10;
-	public float size = 0.5f;
+	public float size = 0.3f;
 	public GameObject exit;
 	public GameObject floorTiles;
 	public GameObject tableTiles;

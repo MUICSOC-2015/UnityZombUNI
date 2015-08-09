@@ -11,7 +11,10 @@ public class MalePlayer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		transform.position = new Vector2 (2f * charSize.size, 2f * charSize.size);
+		transform.position = new Vector3 (2f * charSize.size, 2f * charSize.size, 0f);
+		Vector3 theScale = transform.localScale;
+		theScale.y *= 0.5f;
+		transform.localScale = theScale;
 		rigid = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 		
