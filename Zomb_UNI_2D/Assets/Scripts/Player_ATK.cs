@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class P_BATscript : MonoBehaviour {
+public class Player_ATK : MonoBehaviour {
 
 	Animator anim;
 	Rigidbody2D rigid;
@@ -10,8 +10,8 @@ public class P_BATscript : MonoBehaviour {
 	Vector2 currentTarget;
 	public Transform target;
 	public Button ATK;
-	public float time;
-	public float time2;
+	float time;
+	float time2;
 	bool slap;
 	bool back;
 	bool prevState;
@@ -27,6 +27,7 @@ public class P_BATscript : MonoBehaviour {
 		time = 1.2f;
 		slap = false;
 		back = false;
+		anim.SetBool ("IDLE", false);	
 	
 	}
 
@@ -60,7 +61,7 @@ public class P_BATscript : MonoBehaviour {
 		if (slap) {
 
 			anim.SetBool ("WalkR", true);
-			rigid.velocity = new Vector3 (current.x, current.y, 0) * Time.deltaTime * 20f;
+			rigid.velocity = new Vector3 (current.x, current.y, 0) * Time.deltaTime * 50f;
 			back = true;
 
 		}
@@ -110,7 +111,7 @@ public class P_BATscript : MonoBehaviour {
 			anim.SetBool ("WalkL", true);
 
 			if (anim.GetBool("WalkL")){
-			rigid.velocity = new Vector3 (target.position.x, target.position.y, 0) * Time.deltaTime * 20f;
+			rigid.velocity = new Vector3 (target.position.x, target.position.y, 0) * Time.deltaTime * 50f;
 			}
 			anim.SetBool ("IDLE", false);
 			slap = false;
