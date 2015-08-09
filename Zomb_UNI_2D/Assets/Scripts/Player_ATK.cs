@@ -33,7 +33,7 @@ public class Player_ATK : MonoBehaviour {
 
 	
 	}
-
+	// Reset the values when the turn is ended
 	void EndAttack() {
 
 		time2 = 1f;
@@ -48,18 +48,21 @@ public class Player_ATK : MonoBehaviour {
 	public void Update () {
 
 
-
+		//When the slap animation is activate we start a timer
 		if (anim.GetBool ("Slap")) {
 			time -= Time.deltaTime;
 		}
+
+		//when the time is ended deactive the slap animation and start the next animation (slap)
 
 		if (time < 0 ) {
 
 			anim.SetBool ("Slap", false);
 			slap = true;
 
-
 		}
+
+		//start the walk back to the original position
 
 		if (slap) {
 
@@ -69,6 +72,8 @@ public class Player_ATK : MonoBehaviour {
 
 		}
 
+		// when we come back to the original position call the comeBack function move to original position and reset according to time2
+
 		if (back) {
 
 
@@ -76,7 +81,7 @@ public class Player_ATK : MonoBehaviour {
 
 			if (time2 <= 0 ){
 
-				//CancelInvoke("comeback");
+
 				EndAttack();
 
 			}
@@ -88,7 +93,7 @@ public class Player_ATK : MonoBehaviour {
 	}
 
 	
-
+	//move the character back to its original position
 	public void comeBack() {
 
 
@@ -105,7 +110,7 @@ public class Player_ATK : MonoBehaviour {
 	}
 
 	
-
+	//attack when the attack button was clicked
 	public void Attack (bool ATK ) {
 
 
@@ -124,7 +129,7 @@ public class Player_ATK : MonoBehaviour {
 	}
 	
 	
-
+	//activate the attack animation when it hit the object, only work if the attack button was pressed
 	public void OnCollisionEnter2D (Collision2D col) {
 
 		if (anim.GetBool("WalkL")) {
@@ -135,7 +140,7 @@ public class Player_ATK : MonoBehaviour {
 			Vector3 v = rigid.velocity;
 			v.y = 0.0f;
 			rigid.velocity = v;
-			print ("CollidePP");
+
 
 
 

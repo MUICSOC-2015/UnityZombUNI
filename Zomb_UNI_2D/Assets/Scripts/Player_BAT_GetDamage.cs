@@ -24,11 +24,10 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 		rigid = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 		startPOS = transform.position;
-		startTime = true;
+		startTime = false;
 		time = 1f;
 		time2 = 1.4f;
 		canDamage = true;
-		timeImmune = 6f;
 
 	
 	}
@@ -39,6 +38,7 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 		if (time < 0) {
 
 			rigid.velocity = new Vector3 (1f, 0, 0) * Time.deltaTime * 10f;
+			print ("WHY");
 
 			if (transform.position.x > 1.75f && End ) {
 
@@ -47,11 +47,6 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 			
 		}
 
-		if (startImmune) {
-
-			timeImmune -= Time.deltaTime;
-
-		}
 
 			if (time < -2.5f && End) {
 
@@ -72,14 +67,15 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 
 			if (time2 < 0) {
 
-				//anim.SetBool("Dead", false);
 				End = false;
 				rigid.velocity = new Vector3(transform.position.x, transform.position.y, 0) * 0;
 				anim.enabled = false;
+				Time.timeScale = 0;
 
 			}
 
 		}
+
 	
 	}
 
@@ -100,29 +96,17 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 		this.damage = dam;
 	}
 
-	public void Attack (bool ATK ) {
-		
-		
-		if (ATK) {
 
-			startImmune = true;
-			
-		}
-		
-	}
 
 
 	void OnCollisionEnter2D (Collision2D col) {
 
-		if (timeImmune >= 4) {
 
 			startTime = true;
 			HP.size -= 50 / 100f;
 			GetComponent<Player_ATK> ().enabled = false;
 			print ("canDam");
-			timeImmune = 8f;
 
-		}
 
 
 

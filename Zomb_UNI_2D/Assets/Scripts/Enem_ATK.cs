@@ -70,8 +70,7 @@ public class Enem_ATK : MonoBehaviour {
 		if (ATK2) {
 			
 			barActive = false;
-			print (barActive);
-			
+
 		}
 		
 	}

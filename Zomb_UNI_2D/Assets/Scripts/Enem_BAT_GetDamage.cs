@@ -26,8 +26,7 @@ public class Enem_BAT_GetDamage : MonoBehaviour {
 
 	
 	}
-	
-	// Update is called once per frame
+
 	void FixedUpdate () {
 
 
@@ -57,7 +56,7 @@ public class Enem_BAT_GetDamage : MonoBehaviour {
 			time -= Time.deltaTime;
 
 		}
-
+		//when health is zero the character dies
 		if (HP.size == 0) {
 			time2 -= Time.deltaTime;
 			anim.SetBool("Dead", true);
@@ -74,6 +73,7 @@ public class Enem_BAT_GetDamage : MonoBehaviour {
 	
 	}
 
+	//move the character back to its original position
 	void Reset() {
 
 		time = 1f;
@@ -83,12 +83,13 @@ public class Enem_BAT_GetDamage : MonoBehaviour {
 
 
 	}
-
+	// decrease health according to the button i.e. Attack
 	public void Damage(float dam) {
 
 		this.damage = dam;
 	}
 
+	// decrease health when we collide
 	void OnCollisionEnter2D (Collision2D col) {
 
 		startTime = true;
