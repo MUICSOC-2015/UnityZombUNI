@@ -174,7 +174,10 @@ public class Enem_ATK : MonoBehaviour {
 	public void OnCollisionEnter2D (Collision2D col) {
 
 		if (ATK) {
+			//if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Skel001_slash")) {
 			anim.SetBool ("Slash", true);
+			//} 
+
 			anim.SetBool ("WalkR", false);
 			ATK = false;
 			Vector3 v = rigid.velocity;
