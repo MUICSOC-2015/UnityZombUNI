@@ -19,6 +19,7 @@ public class MalePlayer : MonoBehaviour { //male player is always initialise sin
 
 	// Use this for initialization
 	void Start () {
+<<<<<<< HEAD
 		//reduce the size of the player 
 		Vector3 theScale = transform.localScale;
 		theScale.y *= 0.5f;
@@ -26,6 +27,10 @@ public class MalePlayer : MonoBehaviour { //male player is always initialise sin
 		cam.SetTarget (this.transform);
 
 		//add rigidBody and animation and boxCollider
+=======
+		
+		transform.position = new Vector2 (2f * charSize.size, 2f * charSize.size);
+>>>>>>> parent of 9b75ddd... Camera control and player size and collision = Done
 		rigid = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 		boxCollider = GetComponent<BoxCollider2D> ();
