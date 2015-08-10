@@ -7,10 +7,10 @@ public class GameManager : MonoBehaviour {
 	public static GameManager instance = null;
 	private BoardManager boardScript;
 	private CamControll cam = new CamControll();
-	private int level = 1;
+	private string levelName = "starting";
 
 	// Use this for initialization
-	void Awake () 
+	void Awake ()  //creating the board
 	{
 		if (instance == null)
 			instance = this;
@@ -22,9 +22,9 @@ public class GameManager : MonoBehaviour {
 		boardScript = GetComponent<BoardManager> ();
 		InitGame ();
 	}
-	void InitGame()
+	void InitGame() //call boardScript to set up the game
 	{
-		boardScript.SetupScene (level);
+		boardScript.SetupScene (levelName);
 	}
 	
 	// Update is called once per frame

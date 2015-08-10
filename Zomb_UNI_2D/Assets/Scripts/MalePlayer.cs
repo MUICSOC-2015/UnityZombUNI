@@ -1,75 +1,86 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MalePlayer : MonoBehaviour {
-	
-	Rigidbody2D rigid;
-	public float spd;
+public class MalePlayer : MonoBehaviour { //male player is always initialise since it is already in the scene, just need to create and position it
+
 	Animator anim;
-	BoardManager charSize = new BoardManager();
-	
+	BoardManager charSize = new BoardManager(); //call board manager for size
+
+	public float moveTime = 0.1f;
+	public LayerMask blockingLayer;
+	public float spd;
+	public bool isAnimated = false;
+
+	private BoxCollider2D boxCollider;
+	private Rigidbody2D rigid;
+	private float inverseMoveTime;
+
+
 	// Use this for initialization
 	void Start () {
-		
-		transform.position = new Vector3 (2f * charSize.size, 2f * charSize.size, 0f);
+		//reduce the size of the player 
 		Vector3 theScale = transform.localScale;
-		theScale.y *= 0.5f;
-		transform.localScale = theScale;
+ 		transform.localScale = theScale;
+
+		//add rigidBody and animation and boxCollider
 		rigid = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
+		boxCollider = GetComponent<BoxCollider2D> ();
+
+		//use reciprocal for multiplication instead of dividing, easier on the machine
+		inverseMoveTime = 1f / moveTime;
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-		
-		this.rigid.velocity = new Vector3 (Input.GetAxis ("Horizontal") , Input.GetAxis ("Vertical") , 0) * spd;
-		
-		if (Input.GetAxisRaw ("Horizontal") != 0 || Input.GetAxisRaw ("Vertical") != 0) {
 
-			//anim.SetBool("IDLE", false);
-			anim.enabled = true;
+	void Update () //call movement and stuff
+	{
+		int horizontal = 0;
+		int vertical = 0;
 
+		horizontal = (int)(Input.GetAxisRaw ("Horizontal"));
+		vertical = (int)(Input.GetAxisRaw ("Vertical"));
 
-		} else {
-
-			anim.enabled = false;
-//			anim.SetBool("IDLE", true);
-//			anim.SetBool ("WalkFront", false);
-//			anim.SetBool ("WalkBack", false);
-//			anim.SetBool ("WalkLeft", false);
-//			anim.SetBool ("WalkRight", false);
-//
+		if (horizontal != 0) {
+			vertical = 0;
 		}
-		
-		if (Input.GetAxisRaw ("Horizontal") > 0) {
-			anim.SetBool ("WalkFront", false);
-			anim.SetBool ("WalkBack", false);
-			anim.SetBool ("WalkLeft", false);
-			anim.SetBool ("WalkRight", true);
-		} else if (Input.GetAxisRaw ("Horizontal") < 0) {
-			
-			anim.SetBool ("WalkFront", false);
-			anim.SetBool ("WalkBack", false);
-			anim.SetBool ("WalkLeft", true);
-			anim.SetBool ("WalkRight", false);
-			
-		} else if (Input.GetAxisRaw ("Vertical") > 0) {
-			
-			anim.SetBool ("WalkFront", false);
-			anim.SetBool ("WalkBack", true);
-			anim.SetBool ("WalkLeft", false);
-			anim.SetBool ("WalkRight", false);
-			
-		} else if (Input.GetAxisRaw ("Vertical") < 0) {
-			
-			anim.SetBool ("WalkFront", true);
-			anim.SetBool ("WalkBack", false);
-			anim.SetBool ("WalkLeft", false);
-			anim.SetBool ("WalkRight", false);
-		} 
 
-		
+		Move (horizontal , vertical );
 	}
+
+	protected bool Move(int xDir, int yDir)
+	{
+		Vector2 start = transform.position ;
+
+		Vector2 end = start + new Vector2 (xDir * charSize.size, yDir *charSize.size);
+
+		boxCollider.enabled = false;
+
+
+		boxCollider.enabled = true;
+		StartCoroutine (SmoothMovement (end));
+
+		return true;
+
+
+	}
+
+	protected IEnumerator SmoothMovement (Vector3 end)
+	{
+		float sqrRemainingDistance = ((transform.position - end)  * charSize.size).sqrMagnitude;
+
+		while (sqrRemainingDistance > float.Epsilon) 
+		{
+			Vector3 newPosition = Vector3.MoveTowards(rigid.position , end, inverseMoveTime * Time.deltaTime);
+
+			rigid.MovePosition(newPosition);
+
+			sqrRemainingDistance = (transform.position - end).sqrMagnitude;
+
+			yield return null;
+		}
+	}
+
+
+
 }

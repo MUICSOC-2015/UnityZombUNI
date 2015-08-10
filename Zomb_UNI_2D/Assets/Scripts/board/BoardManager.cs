@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 
+
 public class BoardManager : MonoBehaviour {
 
 	[Serializable]
@@ -19,7 +20,7 @@ public class BoardManager : MonoBehaviour {
 	public int columns = 10;
 	public int rows = 10;
 	public float size = 0.3f;
-	public GameObject exit;
+	public GameObject exitTiles;
 	public GameObject floorTiles;
 	public GameObject tableTiles;
 	public GameObject chairTiles;
@@ -46,7 +47,7 @@ public class BoardManager : MonoBehaviour {
 	}
 
 
-	void BoardSetup()
+	void BoardSetup() //code for setting up walls and floor and call the LayObject to put tables and chairs
 	{
 		boardHolder = new GameObject ("Board").transform;
 
@@ -55,12 +56,13 @@ public class BoardManager : MonoBehaviour {
 			for(int y = 1; y < rows + 1; y++)
 			{
 
-				if(x == 1)
+				if(x == 1 && y != 8 && y != 9)
 				{
 					GameObject leftWall = leftWallTiles;
 					GameObject instance = Instantiate(leftWall, new Vector3 (x *size , y*size , 0f), Quaternion.identity) as GameObject;
 					instance.transform.SetParent(boardHolder);
 				}
+
 				if(x == columns)
 				{
 					GameObject rightWall = rightWallTiles;
@@ -86,13 +88,19 @@ public class BoardManager : MonoBehaviour {
 					GameObject instance = Instantiate(toInstantiate, new Vector3 (x *size, y *size, 0f), Quaternion.identity) as GameObject;
 					instance.transform.SetParent(boardHolder);
 				}
+				if( x == 1 && (y == 8 || y == 9))
+				{
+					GameObject exit = exitTiles;
+					GameObject instance = Instantiate(exit, new Vector3 (x *size, y*size , 0f), Quaternion.identity) as GameObject;
+					instance.transform.SetParent(boardHolder);
+				}
 			
 			}
 		}
 		Layout (boardHolder);
 	}
 
-	void Layout(Transform boardholder)
+	void Layout(Transform boardholder) //code for putting table and chairs.
 	{
 		GameObject toInstantiate = new GameObject();
 		for (int x = 1; x < columns + 1; x++) 
@@ -104,72 +112,63 @@ public class BoardManager : MonoBehaviour {
 					toInstantiate = tableTiles;
 					GameObject instance = Instantiate(toInstantiate, new Vector3 (x *size, y*size , 0f), Quaternion.identity) as GameObject;
 					instance.transform.SetParent(boardHolder);
-
 				}
-				if( (x == 7 && y == 4) || (x == 7 && y == 3) || (x == 8 && y == 3) || (x == 8 && y == 4))
+				else if( (x == 7 && y == 4) || (x == 7 && y == 3) || (x == 8 && y == 3) || (x == 8 && y == 4))
 				{
 					toInstantiate = tableTiles;
 					GameObject instance = Instantiate(toInstantiate, new Vector3 (x*size , y*size , 0f), Quaternion.identity) as GameObject;
 					instance.transform.SetParent(boardHolder);
 				}
-				if( (x == 3 && y == 7) || (x == 3 && y == 6) || (x == 4 && y == 7) || (x == 4 && y == 6))
+				else if( (x == 3 && y == 7) || (x == 3 && y == 6) || (x == 4 && y == 7) || (x == 4 && y == 6))
 				{
 					toInstantiate = tableTiles;
 					GameObject instance = Instantiate(toInstantiate, new Vector3 (x *size, y*size , 0f), Quaternion.identity) as GameObject;
 					instance.transform.SetParent(boardHolder);
 				}
-				if( (x == 7 && y == 6) || (x == 7 && y == 7) || (x == 8 && y == 7) || (x == 8 && y == 6))
+				else if( (x == 7 && y == 6) || (x == 7 && y == 7) || (x == 8 && y == 7) || (x == 8 && y == 6))
 				{
 					toInstantiate = tableTiles;
 					GameObject instance = Instantiate(toInstantiate, new Vector3 (x *size, y *size, 0f), Quaternion.identity) as GameObject;
 					instance.transform.SetParent(boardHolder);
 				}
-				if( x == 2 && (y == 3 || y == 4 || y == 6 || y == 7))
+				else if( x == 2 && (y == 3 || y == 4 || y == 6 || y == 7))
 				{
 					toInstantiate = chairTiles;
 					GameObject instance = Instantiate(toInstantiate, new Vector3 (x *size, y *size, 0f), Quaternion.identity) as GameObject;
 					instance.transform.SetParent(boardHolder);
 				}
-				if( x == 5 && (y == 3 || y == 4 || y == 6 || y == 7))
+				else if( x == 5 && (y == 3 || y == 4 || y == 6 || y == 7))
 				{
 					toInstantiate = chairTiles;
 					GameObject instance = Instantiate(toInstantiate, new Vector3 (x *size, y *size, 0f), Quaternion.identity) as GameObject;
 					instance.transform.SetParent(boardHolder);
 				}
-				if( x == 6 && (y == 3 || y == 4 || y == 6 || y == 7))
+				else if( x == 6 && (y == 3 || y == 4 || y == 6 || y == 7))
 				{
 					toInstantiate = chairTiles;
 					GameObject instance = Instantiate(toInstantiate, new Vector3 (x *size, y *size, 0f), Quaternion.identity) as GameObject;
 					instance.transform.SetParent(boardHolder);
 				}
-				if( x == 9 && (y == 3 || y == 4 || y == 6 || y == 7))
+				else if( x == 9 && (y == 3 || y == 4 || y == 6 || y == 7))
 				{
 					toInstantiate = chairTiles;
 					GameObject instance = Instantiate(toInstantiate, new Vector3 (x *size, y*size , 0f), Quaternion.identity) as GameObject;
 					instance.transform.SetParent(boardHolder);
 				}
-				if( x == 1 && (y == 8 || y == 9))
-				{
-					toInstantiate = exit;
-					GameObject instance = Instantiate(toInstantiate, new Vector3 (x *size, y*size , 0f), Quaternion.identity) as GameObject;
-					instance.transform.SetParent(boardHolder);
-				}
-//				if ( x == 2 && y == 2)
-//				{
-//					toInstantiate = playerTiles;
-//					GameObject instance = Instantiate(toInstantiate, new Vector3 (x *size, y*size , 0f), Quaternion.identity) as GameObject;
-//					instance.transform.SetParent(boardHolder);
-//				}
+
 			}
 		}
 	}
 
-	public void SetupScene(int level)
+	public void SetupScene(string level) //creating board
 	{
-
 		InitialiseList ();
 		BoardSetup ();
+		GameObject instance = Instantiate(playerTiles, new Vector3(2 *size, 2 *size , 0f), Quaternion.identity) as GameObject;
+		instance.transform.SetParent (boardHolder);
+
 
 	}
 
 }
+
