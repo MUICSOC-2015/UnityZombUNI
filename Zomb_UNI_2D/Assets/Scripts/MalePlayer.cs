@@ -14,13 +14,16 @@ public class MalePlayer : MonoBehaviour { //male player is always initialise sin
 	private BoxCollider2D boxCollider;
 	private Rigidbody2D rigid;
 	private float inverseMoveTime;
+	private CamControll cam;
 
 
 	// Use this for initialization
 	void Start () {
 		//reduce the size of the player 
 		Vector3 theScale = transform.localScale;
+		theScale.y *= 0.5f;
  		transform.localScale = theScale;
+		cam.SetTarget (this.transform);
 
 		//add rigidBody and animation and boxCollider
 		rigid = GetComponent<Rigidbody2D> ();
@@ -45,7 +48,21 @@ public class MalePlayer : MonoBehaviour { //male player is always initialise sin
 			vertical = 0;
 		}
 
-		Move (horizontal , vertical );
+		Move (horizontal , vertical);
+
+		if (isAnimated) {
+			return;
+		} 
+		else {
+			startAnimation();
+		}
+		
+
+	}
+
+	protected void startAnimation()
+	{
+
 	}
 
 	protected bool Move(int xDir, int yDir)

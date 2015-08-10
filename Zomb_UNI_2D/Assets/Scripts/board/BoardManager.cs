@@ -5,6 +5,8 @@ using System.Collections.Generic;
 
 public class BoardManager : MonoBehaviour {
 
+
+	CamControll cam;
 	[Serializable]
 	public class Count
 	{
@@ -164,9 +166,8 @@ public class BoardManager : MonoBehaviour {
 	{
 		InitialiseList ();
 		BoardSetup ();
-		GameObject instance = Instantiate(playerTiles, new Vector3(2 *size, 2 *size , 0f), Quaternion.identity) as GameObject;
+		GameObject instance = Instantiate(playerTiles, new Vector3(2 * size, 2 * size , 0f), Quaternion.identity) as GameObject;
 		instance.transform.SetParent (boardHolder);
-
 
 	}
 
