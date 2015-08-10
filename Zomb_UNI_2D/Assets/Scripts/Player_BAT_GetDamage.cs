@@ -8,6 +8,7 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 	Rigidbody2D rigid;
 	float time;
 	float time2;
+	float time3;
 	Vector2 startPOS;
 	bool startTime;
 	bool startImmune;
@@ -17,6 +18,7 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 	bool End = true;
 	public Button ATK;
 	bool canDamage;
+	bool enableReset;
 
 	// Use this for initialization
 	void Start () {
@@ -27,18 +29,19 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 		startTime = false;
 		time = 1f;
 		time2 = 1.4f;
+		time3 = 1.2f;
 		canDamage = true;
+		bool enableReset = false;
 
 	
 	}
 
 	void FixedUpdate () {
 
-
+		//start the animation when the delay is over
 		if (time < 0) {
 
-			rigid.velocity = new Vector3 (1f, 0, 0) * Time.deltaTime * 10f;
-			print ("WHY");
+			rigid.velocity = new Vector3 (1f, 0, 0) * Time.deltaTime * 20f;
 
 			if (transform.position.x > 1.75f && End ) {
 
@@ -48,7 +51,7 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 		}
 
 
-			if (time < -2.5f && End) {
+		if (time < -3f && End) {
 
 				Reset();
 
@@ -59,6 +62,8 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 			time -= Time.deltaTime;
 
 		}
+
+		// if character is dead
 
 		if (HP.size == 0) {
 			time2 -= Time.deltaTime;
@@ -76,20 +81,41 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 
 		}
 
+		if (enableReset) {
+
+			time3 -= Time.deltaTime;
+			rigid.velocity = new Vector3 (-startPOS.x, 0, 0) * time3;
+
+
+		}
+
+		if (time3 <= 0 && enableReset) {
+
+			enableReset = false;
+			rigid.velocity = new Vector3 (0,0,0) * 0;
+			time3 = 0;
+
+		}
+
+
+
 	
 	}
+
+	//move character back to the original position
 
 	void Reset() {
 
 		time = 1f;
-		transform.position = startPOS; 
-		print ("Reset");
+		enableReset = true;
 		startTime = false;
-		time2 = 1f;
+		time2 = 1.4f;
+		time3 = 1.2f;
 		GetComponent<Player_ATK>().enabled = true;
 
-
 	}
+
+	
 
 	public void Damage(float dam) {
 
@@ -101,11 +127,14 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 
 	void OnCollisionEnter2D (Collision2D col) {
 
+		if (!anim.GetBool("WalkL") && !anim.GetBool("WalkR") && !anim.GetBool("Slap") ) {
 
 			startTime = true;
-			HP.size -= 50 / 100f;
+			HP.size -= 25 / 100f;
 			GetComponent<Player_ATK> ().enabled = false;
-			print ("canDam");
+
+
+		}
 
 
 

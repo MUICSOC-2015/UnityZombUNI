@@ -111,7 +111,7 @@ public class Player_ATK : MonoBehaviour {
 
 	
 	//attack when the attack button was clicked
-	public void Attack (bool ATK ) {
+	public void Attack (bool ATK) {
 
 
 		if (ATK) {
@@ -121,7 +121,7 @@ public class Player_ATK : MonoBehaviour {
 			anim.SetBool ("IDLE", false);
 			time2 = 0.1f;
 			time = 1.2f;
-			GetComponent<Player_BAT_GetDamage>().enabled = false;
+//			GetComponent<Player_BAT_GetDamage>().enabled = false;
 
 
 		}

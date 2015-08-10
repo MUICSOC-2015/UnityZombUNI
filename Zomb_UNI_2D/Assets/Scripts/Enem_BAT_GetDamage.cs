@@ -57,12 +57,11 @@ public class Enem_BAT_GetDamage : MonoBehaviour {
 
 		}
 		//when health is zero the character dies
-		if (HP.size == 0) {
+		if (HP.size <= 0) {
 			time2 -= Time.deltaTime;
 			anim.SetBool("Dead", true);
 
 			if (time2 < 0) {
-
 				anim.SetBool("Dead", false);
 				End = false;
 				rigid.velocity = new Vector3(transform.position.x, transform.position.y, 0) * 0;
@@ -92,8 +91,14 @@ public class Enem_BAT_GetDamage : MonoBehaviour {
 	// decrease health when we collide
 	void OnCollisionEnter2D (Collision2D col) {
 
-		startTime = true;
-		HP.size -= damage/100f;
+		if (!anim.GetBool ("WalkL") && !anim.GetBool ("WalkR") && !anim.GetBool ("Slash")) {
+
+
+			startTime = true;
+			HP.size -= damage / 100f;
+
+
+		}
 
 
 	}

@@ -5,17 +5,20 @@ using UnityEngine.UI;
 public class Enem_ATK : MonoBehaviour {
 
 	Animator anim;
+	Animator conanim;
 	Rigidbody2D rigid;
 	Vector2 startPOS;
 	Vector2 TargetPOS;
 	public Transform target;
-	float time;
+	//float time;
 	float time2;
 	float time3;
+	float time4;
 	bool slap;
 	bool back;
 	bool back2;
 	bool start;
+	bool startTime;
 	bool barActive;
 	public GameObject connect;
 	public Scrollbar bar;
@@ -28,11 +31,11 @@ public class Enem_ATK : MonoBehaviour {
 
 		anim = GetComponent<Animator> ();
 		rigid = GetComponent<Rigidbody2D> ();
-
+		conanim = connect.GetComponent<Animator> ();
 		startPOS = transform.position;
 		TargetPOS = target.position;
 		time2 = 1f;
-		time = 4f;
+//		time = 4f;
 		time3 = 2f;
 		slap = false;
 		back = false;
@@ -48,7 +51,7 @@ public class Enem_ATK : MonoBehaviour {
 	void Reset() {
 
 		time2 = 1f;
-		time = 4f;
+//		time = 4f;
 		time3 = 2f;
 		slap = false;
 		back = false;
@@ -70,16 +73,33 @@ public class Enem_ATK : MonoBehaviour {
 		if (ATK2) {
 			
 			barActive = false;
+			time4 = 4f;
+			startTime = true;
+
 
 		}
 		
 	}
 
 	void Update() {
+
 	
 		if (barActive) { 
 			bar.size += Time.deltaTime * 0.25f;
 		}
+
+		if (startTime) {
+
+			time4 -= Time.deltaTime;
+
+		}
+
+		if (time4 <= 0 && !ATK) {
+
+			barActive = true;
+
+		}
+
 
 		if (bar.size == 1) {
 			
@@ -100,12 +120,8 @@ public class Enem_ATK : MonoBehaviour {
 			anim.SetBool("IDLE", false);
 			bar.size = 0;
 			barActive = false;
-			time -= Time.deltaTime;
-			if (time < 3.1) {
+//			time -= Time.deltaTime;
 			rigid.velocity = new Vector3(TargetPOS.x, TargetPOS.y, 0) * Time.deltaTime * 50f;
-			}
-			connect.GetComponent<Player_ATK>().enabled = false;
-			GetComponent<Enem_BAT_GetDamage>().enabled = false;
 
 		}
 
@@ -113,6 +129,7 @@ public class Enem_ATK : MonoBehaviour {
 		if (anim.GetBool ("Slash")) {
 			
 			time2 -= Time.deltaTime;
+			barActive = false;
 			
 		}
 
@@ -132,7 +149,7 @@ public class Enem_ATK : MonoBehaviour {
 			anim.SetBool("Slash", false);
 			anim.SetBool("WalkL", true);
 			rigid.velocity = new Vector3(startPOS.x, startPOS.y, 0);
-
+			barActive = false;
 		}
 
 
@@ -143,6 +160,7 @@ public class Enem_ATK : MonoBehaviour {
 			anim.SetBool("IDLE", true);
 			back2 = true;
 			time3 -= Time.deltaTime;
+			barActive = false;
 
 		}
 
@@ -155,14 +173,17 @@ public class Enem_ATK : MonoBehaviour {
 
 	public void OnCollisionEnter2D (Collision2D col) {
 
+		if (ATK) {
+			anim.SetBool ("Slash", true);
+			anim.SetBool ("WalkR", false);
+			ATK = false;
+			Vector3 v = rigid.velocity;
+			v.y = 0.0f;
+			rigid.velocity = v;
+			back = true;
 
-		anim.SetBool ("Slash", true);
-		anim.SetBool ("WalkR", false);
-		ATK = false;
-		Vector3 v = rigid.velocity;
-		v.y = 0.0f;
-		rigid.velocity = v;
-		back = true;
+		}
+
 
 	
 
