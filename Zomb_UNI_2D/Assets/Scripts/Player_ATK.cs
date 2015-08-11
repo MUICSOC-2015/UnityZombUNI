@@ -66,9 +66,10 @@ public class Player_ATK : MonoBehaviour {
 
 		if (slap) {
 
-			anim.SetBool ("WalkR", true);
+			StartCoroutine(PlayOneShot("WalkR"));
+			//anim.SetBool ("WalkR", true);
 			rigid.velocity = new Vector3 (current.x, current.y, 0) * Time.deltaTime * 50f;
-			back = true;
+			//back = true;
 
 		}
 
@@ -116,12 +117,12 @@ public class Player_ATK : MonoBehaviour {
 
 		if (ATK) {
 
-			anim.SetBool ("WalkL", true);
+			StartCoroutine(PlayOneShot("WalkL"));
+			//anim.SetBool ("WalkL", true);
 			rigid.velocity = new Vector3 (target.position.x, target.position.y, 0) * Time.deltaTime * 50f;
 			anim.SetBool ("IDLE", false);
 			time2 = 0.1f;
 			time = 1.2f;
-//			GetComponent<Player_BAT_GetDamage>().enabled = false;
 
 
 		}
@@ -133,22 +134,30 @@ public class Player_ATK : MonoBehaviour {
 	public void OnCollisionEnter2D (Collision2D col) {
 
 		if (anim.GetBool("WalkL")) {
-
 			anim.SetBool ("WalkL", false);
-			anim.SetBool ("Slap", true);
+			StopCoroutine(PlayOneShot("WalkL"));
+			StartCoroutine(PlayOneShot("Slap"));
+			//anim.SetBool ("Slap", true);
 			time = 1.2f;
 			Vector3 v = rigid.velocity;
 			v.y = 0.0f;
 			rigid.velocity = v;
-
-
+			back = true;
 
 
 		}
 
 	}
 
-	
+	public IEnumerator PlayOneShot ( string paramName ) {
+		
+		{
+			anim.SetBool (paramName, true);
+			yield return null;
+			anim.SetBool (paramName, false);
+		}
+
+	}
 
 
 }

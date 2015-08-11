@@ -115,18 +115,16 @@ public class Enem_ATK : MonoBehaviour {
 
 		if (ATK) {
 
-
-			anim.SetBool("WalkR", true);
+			StartCoroutine(PlayOneShot("WalkR"));
 			anim.SetBool("IDLE", false);
 			bar.size = 0;
 			barActive = false;
-//			time -= Time.deltaTime;
 			rigid.velocity = new Vector3(TargetPOS.x, TargetPOS.y, 0) * Time.deltaTime * 50f;
 
 		}
 
 
-		if (anim.GetBool ("Slash")) {
+		if (back) {
 			
 			time2 -= Time.deltaTime;
 			barActive = false;
@@ -146,8 +144,10 @@ public class Enem_ATK : MonoBehaviour {
 
 		if (time2 < 0) {
 
-			anim.SetBool("Slash", false);
-			anim.SetBool("WalkL", true);
+			//anim.SetBool("Slash", false);
+			StopCoroutine(PlayOneShot("Slash"));
+			StartCoroutine(PlayOneShot("WalkL"));
+			//anim.SetBool("WalkL", true);
 			rigid.velocity = new Vector3(startPOS.x, startPOS.y, 0);
 			barActive = false;
 		}
@@ -174,10 +174,8 @@ public class Enem_ATK : MonoBehaviour {
 	public void OnCollisionEnter2D (Collision2D col) {
 
 		if (ATK) {
-			//if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Skel001_slash")) {
-			anim.SetBool ("Slash", true);
-			//} 
-
+			//anim.SetBool ("Slash", true);
+			StartCoroutine(PlayOneShot("Slash"));
 			anim.SetBool ("WalkR", false);
 			ATK = false;
 			Vector3 v = rigid.velocity;
@@ -185,6 +183,17 @@ public class Enem_ATK : MonoBehaviour {
 			rigid.velocity = v;
 			back = true;
 
+		}
+
+	}
+
+
+		public IEnumerator PlayOneShot ( string paramName ) {
+
+		{
+			anim.SetBool( paramName, true );
+			yield return null;
+			anim.SetBool( paramName, false );
 		}
 
 

@@ -93,7 +93,6 @@ public class Enem_BAT_GetDamage : MonoBehaviour {
 
 		if (!anim.GetBool ("WalkL") && !anim.GetBool ("WalkR") && !anim.GetBool ("Slash")) {
 
-
 			startTime = true;
 			HP.size -= damage / 100f;
 
