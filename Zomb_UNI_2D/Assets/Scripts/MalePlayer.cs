@@ -15,34 +15,25 @@ public class MalePlayer : MonoBehaviour { //male player is always initialise sin
 	private Rigidbody2D rigid;
 	private float inverseMoveTime;
 	private CamControll cam;
+	private MalePlayer malePlayer;
 
 
 	// Use this for initialization
 	void Start () {
-<<<<<<< HEAD
-<<<<<<< HEAD
 		//reduce the size of the player 
+
 		Vector3 theScale = transform.localScale;
 		theScale.y *= 0.5f;
  		transform.localScale = theScale;
-		cam.SetTarget (this.transform);
 
-		//add rigidBody and animation and boxCollider
-=======
-		
-		transform.position = new Vector2 (2f * charSize.size, 2f * charSize.size);
->>>>>>> parent of 9b75ddd... Camera control and player size and collision = Done
-=======
-		
-		transform.position = new Vector2 (2f * charSize.size, 2f * charSize.size);
->>>>>>> parent of 9b75ddd... Camera control and player size and collision = Done
+//		transform.position = new Vector2 (2f * charSize.size, 2f * charSize.size);
 		rigid = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 		boxCollider = GetComponent<BoxCollider2D> ();
+		cam = GetComponent<CamControll>();
 
 		//use reciprocal for multiplication instead of dividing, easier on the machine
 		inverseMoveTime = 1f / moveTime;
-		
 	}
 	
 

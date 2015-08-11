@@ -6,7 +6,7 @@ public class CamControll : MonoBehaviour {
 	// Use this for initialization
 	public Transform target;
 	private float trackSpeed = 10;
-	
+
 	
 	// Set target
 	public void SetTarget(Transform t) {
@@ -14,7 +14,7 @@ public class CamControll : MonoBehaviour {
 	}
 	
 	// Track target
-	void LateUpdate() {
+	public void LateUpdate() {
 		if (target) {
 			var v = transform.position;
 			v.x = target.position.x;

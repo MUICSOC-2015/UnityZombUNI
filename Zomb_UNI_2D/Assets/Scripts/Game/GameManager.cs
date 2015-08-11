@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
 
 	public static GameManager instance = null;
 	private BoardManager boardScript;
-	private CamControll cam = new CamControll();
+	private Camera cam;
 	private string levelName = "starting";
 
 	// Use this for initialization
@@ -20,12 +20,12 @@ public class GameManager : MonoBehaviour {
 		DontDestroyOnLoad (gameObject);
 
 		boardScript = GetComponent<BoardManager> ();
+		cam = GetComponent<Camera> ();
 		InitGame ();
 	}
 	void InitGame() //call boardScript to set up the game
 	{
 		boardScript.SetupScene (levelName);
-		cam.SetTarget (boardScript.playerTiles.transform);
 	}
 	
 	// Update is called once per frame
