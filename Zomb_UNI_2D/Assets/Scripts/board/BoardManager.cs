@@ -21,8 +21,13 @@ public class BoardManager : MonoBehaviour {
 
 	public int columns = 10;
 	public int rows = 10;
+<<<<<<< HEAD:Zomb_UNI_2D/Assets/Scripts/board/BoardManager.cs
 	public float size = 0.3f;
 	public GameObject exitTiles;
+=======
+	public float size = 0.5f;
+	public GameObject exit;
+>>>>>>> parent of 9b75ddd... Camera control and player size and collision = Done:Zomb_UNI_2D/Assets/Scripts/BoardManager.cs
 	public GameObject floorTiles;
 	public GameObject tableTiles;
 	public GameObject chairTiles;
