@@ -17,6 +17,8 @@ public class Player_ATK : MonoBehaviour {
 	bool prevState;
 	GameObject connect;
 	Component getDam;
+	public bool Attacking;
+	bool startTime;
 
 	// Use this for initialization
 	void Start () {
@@ -26,10 +28,11 @@ public class Player_ATK : MonoBehaviour {
 		current = transform.position;
 		currentTarget = target.position;
 		time2 = 1f;
-		time = 1.2f;
+		time = 2f;
 		slap = false;
 		back = false;
 		anim.SetBool ("IDLE", false);
+		startTime = false;
 
 	
 	}
@@ -37,9 +40,11 @@ public class Player_ATK : MonoBehaviour {
 	void EndAttack() {
 
 		time2 = 1f;
-		time = 1.2f;
+		time = 2f;
 		slap = false;
 		back = false;
+		Attacking = false;
+		startTime = false;
 		//rigid.MovePosition (current);
 
 
@@ -50,15 +55,18 @@ public class Player_ATK : MonoBehaviour {
 
 		//When the slap animation is activate we start a timer
 		if (anim.GetBool ("Slap")) {
-			time -= Time.deltaTime;
+			startTime = true;
 		}
 
+		if (startTime) {
+			time -= Time.deltaTime;
+		}
 		//when the time is ended deactive the slap animation and start the next animation (slap)
 
 		if (time < 0 ) {
 
-			anim.SetBool ("Slap", false);
 			slap = true;
+			StopCoroutine(PlayOneShot("Slap"));
 
 		}
 
@@ -78,7 +86,8 @@ public class Player_ATK : MonoBehaviour {
 		if (back) {
 
 
-			Invoke("comeBack", 1.5f);
+			comeBack();
+			print (time2);
 
 			if (time2 <= 0 ){
 
@@ -101,7 +110,7 @@ public class Player_ATK : MonoBehaviour {
 		if (transform.position.x >= current.x) {
 			rigid.velocity = new Vector3 (0, 0, 0) * 0;
 			anim.SetBool ("WalkR", false);
-			anim.SetBool ("IDLE", true);
+			StartCoroutine(PlayOneShot("IDLE"));
 			slap = false;
 			time2-=Time.deltaTime;
 
@@ -118,11 +127,9 @@ public class Player_ATK : MonoBehaviour {
 		if (ATK) {
 
 			StartCoroutine(PlayOneShot("WalkL"));
-			//anim.SetBool ("WalkL", true);
 			rigid.velocity = new Vector3 (target.position.x, target.position.y, 0) * Time.deltaTime * 50f;
 			anim.SetBool ("IDLE", false);
-			time2 = 0.1f;
-			time = 1.2f;
+			Attacking = true;
 
 
 		}
@@ -133,12 +140,11 @@ public class Player_ATK : MonoBehaviour {
 	//activate the attack animation when it hit the object, only work if the attack button was pressed
 	public void OnCollisionEnter2D (Collision2D col) {
 
-		if (anim.GetBool("WalkL")) {
+		if (Attacking) {
 			anim.SetBool ("WalkL", false);
 			StopCoroutine(PlayOneShot("WalkL"));
 			StartCoroutine(PlayOneShot("Slap"));
-			//anim.SetBool ("Slap", true);
-			time = 1.2f;
+			time = 2f;
 			Vector3 v = rigid.velocity;
 			v.y = 0.0f;
 			rigid.velocity = v;

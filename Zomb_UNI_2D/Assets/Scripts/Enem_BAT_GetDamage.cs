@@ -12,7 +12,7 @@ public class Enem_BAT_GetDamage : MonoBehaviour {
 	bool startTime;
 	float damage;
 	Animator anim;
-	bool End = true;
+	public bool End = true;
 
 	// Use this for initialization
 	void Start () {
@@ -91,7 +91,7 @@ public class Enem_BAT_GetDamage : MonoBehaviour {
 	// decrease health when we collide
 	void OnCollisionEnter2D (Collision2D col) {
 
-		if (!anim.GetBool ("WalkL") && !anim.GetBool ("WalkR") && !anim.GetBool ("Slash")) {
+		if (!GetComponent<Enem_ATK>().ATK) {
 
 			startTime = true;
 			HP.size -= damage / 100f;

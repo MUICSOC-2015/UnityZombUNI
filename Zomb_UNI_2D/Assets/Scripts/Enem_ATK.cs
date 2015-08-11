@@ -22,7 +22,7 @@ public class Enem_ATK : MonoBehaviour {
 	bool barActive;
 	public GameObject connect;
 	public Scrollbar bar;
-	bool ATK;
+	public bool ATK;
 	public Button ATK2;
 
 	
@@ -84,7 +84,7 @@ public class Enem_ATK : MonoBehaviour {
 	void Update() {
 
 	
-		if (barActive) { 
+		if (barActive && GetComponent<Enem_BAT_GetDamage>().End) { 
 			bar.size += Time.deltaTime * 0.25f;
 		}
 
@@ -107,14 +107,10 @@ public class Enem_ATK : MonoBehaviour {
 			
 		}
 
+
 		if (ATK) {
 
 			bar.size = 0;
-
-		}
-
-		if (ATK) {
-
 			StartCoroutine(PlayOneShot("WalkR"));
 			anim.SetBool("IDLE", false);
 			bar.size = 0;

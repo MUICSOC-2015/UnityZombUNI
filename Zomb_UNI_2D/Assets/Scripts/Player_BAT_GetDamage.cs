@@ -19,6 +19,7 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 	public Button ATK;
 	bool canDamage;
 	bool enableReset;
+	bool Attacking;
 
 	// Use this for initialization
 	void Start () {
@@ -28,10 +29,11 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 		startPOS = transform.position;
 		startTime = false;
 		time = 1f;
-		time2 = 1.4f;
+		time2 = 1f;
 		time3 = 1.2f;
 		canDamage = true;
 		bool enableReset = false;
+		Attacking = false;
 
 	
 	}
@@ -67,7 +69,8 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 
 		if (HP.size == 0) {
 			time2 -= Time.deltaTime;
-			anim.SetBool("Dead", true);
+			//anim.SetBool("Dead", true);
+			StartCoroutine(PlayOneShot("Dead"));
 
 
 			if (time2 < 0) {
@@ -109,9 +112,9 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 		time = 1f;
 		enableReset = true;
 		startTime = false;
-		time2 = 1.4f;
+		time2 = 1f;
 		time3 = 1.2f;
-		GetComponent<Player_ATK>().enabled = true;
+		Attacking = false;
 
 	}
 
@@ -127,17 +130,24 @@ public class Player_BAT_GetDamage : MonoBehaviour {
 
 	void OnCollisionEnter2D (Collision2D col) {
 
-		if (!anim.GetBool("WalkL") && !anim.GetBool("WalkR") && !anim.GetBool("Slap") ) {
+		if (!GetComponent<Player_ATK>().Attacking) {
 
 			startTime = true;
 			HP.size -= 25 / 100f;
-			GetComponent<Player_ATK> ().enabled = false;
 
 
 		}
 
 
-
-
 	}
+
+	public IEnumerator PlayOneShot ( string paramName ) {
+				
+				{
+					anim.SetBool (paramName, true);
+					yield return null;
+					anim.SetBool (paramName, false);
+				}
+				
+			}
 }
