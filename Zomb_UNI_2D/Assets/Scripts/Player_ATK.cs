@@ -121,18 +121,15 @@ public class Player_ATK : MonoBehaviour {
 
 	
 	//attack when the attack button was clicked
-	public void Attack (bool ATK) {
+	public IEnumerator Attack () {
 
-
-		if (ATK) {
-
-			StartCoroutine(PlayOneShot("WalkL"));
-			rigid.velocity = new Vector3 (target.position.x, target.position.y, 0) * Time.deltaTime * 50f;
-			anim.SetBool ("IDLE", false);
-			Attacking = true;
-
-
-		}
+		print ("HOHO");
+		StartCoroutine(PlayOneShot("WalkL"));
+		rigid.velocity = new Vector3 (target.position.x, target.position.y, 0) * Time.deltaTime * 50f;
+		anim.SetBool ("IDLE", false);
+		Attacking = true;
+		return null;
+		
 
 	}
 	
