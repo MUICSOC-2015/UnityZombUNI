@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿
 using System.Collections;
 using System.Collections.Generic;
 
@@ -9,7 +9,7 @@ public class Skills : System.Object {
 	public int Damage;
 	public string Info;
 	public bool melee;
-
+	public int MP;
 }
 
 
